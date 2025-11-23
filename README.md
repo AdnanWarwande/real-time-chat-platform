@@ -39,6 +39,7 @@ To run this application locally, you need to set up several services and configu
 
 ### 1. Environment Configuration
 
+```bash
 Create a file named `.env.local` in the root directory and populate it with your keys (referencing the `.env.example` file):
 
 DATABASE_URL="YOUR_POSTGRES_DATABASE_URL"
@@ -50,7 +51,7 @@ UPLOADTHING_SECRET="YOUR_UPLOADTHING_SECRET" UPLOADTHING_APP_ID="YOUR_UPLOADTHIN
 LIVEKIT_API_KEY="YOUR_LIVEKIT_API_KEY" LIVEKIT_SECRET="YOUR_LIVEKIT_SECRET" NEXT_PUBLIC_LIVEKIT_URL="YOUR_LIVEKIT_URL"
 
 NEXT_PUBLIC_SITE_URL="http://localhost:3000"
-
+```
 
 ### 2. Database Setup
 
@@ -73,26 +74,8 @@ Start the development server:
 
 ```bash
 npm run dev
+```
 The application will be accessible at http://localhost:3000.
 
-Project Author: Adnan Warwande Date: November 2025
-
-Code snippet
 
 
-After you create this file in your project root, you need to stage it and commit it as part of your "Initial commit." Since you already committed your code, you just need to:
-
-1.  **Stage the New README:**
-    ```bash
-    git add README.md
-    ```
-
-2.  **Commit the README (Amend the last commit to keep history clean):**
-    ```bash
-    git commit --amend --no-edit
-    ```
-
-3.  **Final Push:**
-    ```bash
-    git push origin main
-    ```
