@@ -1,4 +1,4 @@
-# 💬 Real-Time Communication Platform (Discord Clone)
+# 💬 Real-Time Communication Platform
 
 This is a modern, full-stack, real-time communication platform designed for instant messaging, voice, and video chat, demonstrating proficiency in the T3 stack and WebSocket integration.
 
@@ -11,7 +11,7 @@ The project is built around the concepts of servers, channels, and members, prov
 * **Authentication:** Secure user sign-in and sign-up powered by **Clerk**.
 * **Server Management:** Users can create, manage, and invite members to custom servers and channels (text, audio, video).
 * **File Sharing:** Securely upload and share files (images, documents) within chat channels using **UploadThing**.
-* **Database:** Structured data persistence using **Prisma ORM** with a **PostgreSQL** backend (or similar).
+* **Database:** Structured data persistence using **Prisma ORM** with a **PostgreSQL** backend.
 * **Modern UI/UX:** Responsive, aesthetic user interface built with **Tailwind CSS** and **Shadcn UI**.
 * **Infinite Scrolling:** Efficiently load and display message history using infinite scrolling queries.
 
@@ -44,11 +44,15 @@ Create a file named `.env.local` in the root directory and populate it with your
 
 DATABASE_URL="YOUR_POSTGRES_DATABASE_URL"
 
-CLERK_SECRET_KEY="YOUR_CLERK_SECRET_KEY" NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="YOUR_CLERK_PUBLISHABLE_KEY"
+CLERK_SECRET_KEY="YOUR_CLERK_SECRET_KEY"
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="YOUR_CLERK_PUBLISHABLE_KEY"
 
-UPLOADTHING_SECRET="YOUR_UPLOADTHING_SECRET" UPLOADTHING_APP_ID="YOUR_UPLOADTHING_APP_ID"
+UPLOADTHING_SECRET="YOUR_UPLOADTHING_SECRET"
+UPLOADTHING_APP_ID="YOUR_UPLOADTHING_APP_ID"
 
-LIVEKIT_API_KEY="YOUR_LIVEKIT_API_KEY" LIVEKIT_SECRET="YOUR_LIVEKIT_SECRET" NEXT_PUBLIC_LIVEKIT_URL="YOUR_LIVEKIT_URL"
+LIVEKIT_API_KEY="YOUR_LIVEKIT_API_KEY"
+LIVEKIT_SECRET="YOUR_LIVEKIT_SECRET"
+NEXT_PUBLIC_LIVEKIT_URL="YOUR_LIVEKIT_URL"
 
 NEXT_PUBLIC_SITE_URL="http://localhost:3000"
 ```
